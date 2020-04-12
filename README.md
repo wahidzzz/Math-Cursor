@@ -1,16 +1,19 @@
 # Math Cursor
 
-One Paragraph of project description goes here
+It simple yet fun game, that exercises you brain and teach math and grapical map of screen simultaneously.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+####For Desktop Devices:
+Calculate given equation, use cursor when you think you have found the correct X & Y cordinates.
+
+####For Moblie Devices:
+Since Mobile Does not support Dragable cursor, you have to guess the correct answer.
+Click the correct cordinate and get the 10 points each correct answer. Playing on Desktop is Advised to have more fun.
 
 ### Web App
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
+Visit : [Math-Cursor](https://mathcursor.netlify.com/)
 
 ```
 Give the example
