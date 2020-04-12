@@ -1,5 +1,5 @@
 # Math Cursor
-
+![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
 It simple yet fun game, that exercises you brain and teach math and grapical map of screen simultaneously.
 
 ## Getting Started
