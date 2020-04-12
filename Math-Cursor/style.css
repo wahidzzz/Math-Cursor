@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+
+.cordinates {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  height: 8rem;
+  width: 8rem;
+  padding: 1rem;
+  color: white;
+}
+.xcor,
+.ycor {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  cursor: default;
+}
+.xpos,
+.ypos {
+  padding-left: 0.5rem;
+}
+#lastX,
+#lastY {
+  width: 2rem;
+}
+#currentSign,
+#lastX,
+#lastY {
+  padding-right: 0.5rem;
+  font-size: 1.17rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.mathProb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  color: white;
+  cursor: default;
+}
+.flex-row-around {
+  font-size: 2rem;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+.equaSign {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  height: 3rem;
+  width: 11rem;
+  border: 0.1rem solid white;
+  border-radius: 0.2rem;
+  padding: 0.5rem 0rem;
+}
+.points::before {
+  content: "Points:";
+  margin-right: 0.5rem;
+  font-size: 1rem;
+}
+.points {
+  position: absolute;
+  bottom: 1rem;
+  right: 12.5rem;
+  height: 3rem;
+  width: 10rem;
+  border: 0.1rem solid white;
+  border-radius: 0.2rem;
+  padding: 0.5rem;
+}
+.ansSkip {
+  position: absolute;
+  top: 2rem;
+  right: 3rem;
+  height: 3rem;
+  width: 5rem;
+  padding: 0.5rem;
+  border-bottom: 0.2rem solid white;
+  cursor: pointer;
+}
+.equaAns {
+  font-size: 9rem;
+  color: white;
+  cursor: default;
+}
+.sign {
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0 0.5rem;
+}
+
+.sign:hover,
+.active {
+  color: black;
+  background-color: white;
+  border-radius: 0.1rem;
+}
+
+.mathProb h3 {
+  padding: 0 0.5rem;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.howTo {
+  position: absolute;
+
+  bottom: 0;
+  width: 10rem;
+}
+.socialMedia {
+  position: absolute;
+  left: 1rem;
+  bottom: 0rem;
+}
+a {
+  color: white;
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+@keyframes strike {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.strike {
+  position: relative;
+}
+.strike::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 0.5rem;
+  background: #d9534f;
+  border-radius: 2rem;
+  animation-name: strike;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+/*pop-up*/
+#btn {
+  animation: shake 2s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #f1f1f1;
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s;
+}
+.popup-content {
+  position: fixed;
+  bottom: 0;
+  background-color: #ffffff;
+  width: 100vw;
+  height: 70vh;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.5s;
+  animation-name: slideIn;
+  animation-duration: 0.5s;
+}
+.end {
+  color: white;
+  padding-top: 0.5rem;
+  padding-right: 0.5rem;
+  float: right;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.end:hover,
+.end:focus {
+  color: white;
+  font-size: 2rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+.popup-header {
+  padding: 0.5rem 1rem;
+  background-color: #000;
+  color: white;
+}
+.popup-body {
+  padding: 0.5rem 1rem;
+  text-align: justify;
+  color: #000;
+  font-size: 1rem;
+}
+@-webkit-keyframes slideIn {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+/*keyframes*/
+@keyframes slideIn {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .equaAns {
+    font-size: 5rem;
+  }
+  .socialMedia {
+    bottom: 4rem;
+  }
+  .end,
+  .popup-header {
+    font-size: 1.5rem;
+  }
+}
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
