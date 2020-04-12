@@ -1,5 +1,5 @@
 # Math Cursor
-![Image of Logo]()
+![Image of Logo](https://github.com/wahidzzz/Math-Cursor/blob/master/Math-Cursor/favicon.png)
 It simple yet fun game, that exercises you brain and teach math and grapical map of screen simultaneously.
 
 ## Getting Started
